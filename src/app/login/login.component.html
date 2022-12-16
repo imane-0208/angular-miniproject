@@ -1,0 +1,29 @@
+<div class="login-container">
+    <div class="logo">Rotten Tomato</div>
+    <img class="film" src="assets/images/film.png" alt="">
+    <div class="desc">
+        Rotten Tomatoes est un site Web, créé en 1998, dévolu aux critiques et aux informations sur les films. 
+        Même si le nom provient du cliché datant de l'époque du vaudeville, où jeter des tomates pourries (en anglais : rotten tomatoes) 
+        sur les acteurs était une façon pour le public de souligner la médiocrité d'une représentation, l'inspiration originale provient
+        d'une scène du film canadien Léolo tourné en 1992 dans laquelle une actrice tombe dans un bac de tomates
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" class="form-control" placeholder="enter your username" [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <label for="pword">Password</label>
+            <input type="password" name="pword" class="form-control" placeholder="enter your password" [(ngModel)]="password">
+        </div>
+        <div class="btn-container">
+            <div class="error">{{ msgError }}</div>
+            <button class="btn btn-dark" (click)="login()"> Login</button>
+        </div>
+
+
+    </div>
+
+
+
+</div>
